@@ -1,0 +1,33 @@
+//---------------------------
+//      PATRON DE COLORES
+//---------------------------
+
+$text:red;
+$principal:orange;
+$secundario:blue;
+
+
+/*---------------
+ESTILOS DEL DISEÑO
+---------------*/
+html{
+    font-size:13px ;
+}
+
+.card {
+    /* Tamaño original de la tarjeta */
+  
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* Sombra tenue */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    transform: scale(1.05);
+  /* Sombra más pronunciada */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+ 
