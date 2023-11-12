@@ -1,9 +1,40 @@
 @charset "UTF-8";
+/*---------------------------------------
+Sobreescribiendo los estilos de bootstrap
+---------------------------------------*/
+.bg-primary {
+  background-color: #ff401c !important; }
+
+.text-primary {
+  color: #ff401c !important; }
+
+.btn-primary {
+  background-color: #ff401c !important;
+  border-color: #b51d00 !important; }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e82500 !important; }
+
+.btn-primary:active {
+  background-color: #b51d00 !important;
+  border-color: #821500 !important; }
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5) !important; }
+
 /*---------------
 ESTILOS DEL DISEÑO
 ---------------*/
 html {
   font-size: 13px; }
+
+body {
+  color: #44484a;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif; }
 
 .card {
   /* Tamaño original de la tarjeta */
@@ -23,5 +54,12 @@ html {
   /* Sombra más pronunciada */
   -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
+
+ /*---------------
+SHOW DE LOS MEDIAS QUERIES
+---------------*/
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

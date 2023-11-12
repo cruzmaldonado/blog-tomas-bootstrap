@@ -2,10 +2,44 @@
 //      PATRON DE COLORES
 //---------------------------
 
-$text:red;
-$principal:orange;
-$secundario:blue;
+$principal:#ff401c;
 
+$text:#44484a;
+
+/*---------------------------------------
+Sobreescribiendo los estilos de bootstrap
+---------------------------------------*/
+.bg-primary {
+    background-color:$principal !important;
+}
+.text-primary {
+    color: $principal !important;
+}
+.btn-primary {
+    
+    background-color: $principal !important;
+    border-color: darken($principal,20%) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus
+ {
+    background-color: darken($principal,10%) !important; 
+    
+}
+.btn-primary:active
+ {
+    background-color: darken($principal,20%) !important; 
+    border-color: darken($principal,30%) !important;
+}
+.btn-primary:focus
+ {
+    box-shadow: 0 0 0 0.2rem rgba($principal,.5) !important;
+    
+}
+
+
+//? Esto es una forma de oscurecer colores propias de sass border-color: darken($principal,40%) !important;
+//? este sirve para transparencias de un color box-shadow: 0 0 0 0.2rem rgba($principal,.5) !important;
 
 /*---------------
 ESTILOS DEL DISEÑO
@@ -13,7 +47,12 @@ ESTILOS DEL DISEÑO
 html{
     font-size:13px ;
 }
-
+body{
+    color:$text;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
 .card {
     /* Tamaño original de la tarjeta */
   
@@ -30,4 +69,12 @@ html{
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
   }
 
- 
+ /*---------------
+SHOW DE LOS MEDIAS QUERIES
+---------------*/
+@media (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+}
+
